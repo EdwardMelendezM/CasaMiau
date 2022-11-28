@@ -1,5 +1,6 @@
 
 <b>Adopcion de gatitos con aplicacion de contacto de email y base de datos</b>
+<p>Lengujas utilizados: Php, javascript, mysql</p>
 
 # VENTANA PRINCIPAL
 [![01.jpg](https://i.postimg.cc/7ZSG3gw1/01.jpg)](https://postimg.cc/TKY3G5yh)
