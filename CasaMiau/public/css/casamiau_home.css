@@ -1,0 +1,207 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --color-main:rgb(255, 255, 255);
+    --color-secundary:#696767;
+    --color-letter:#0600FF;
+    --letter-size:1em;
+    --font-family-logo: 'Nanum Gothic', sans-serif;
+    --color--secondary-background:#FFD814;
+    --font-family-titulos: 'Bebas Neue', cursive;
+
+}
+
+main .fondo-general{
+    background-image: url("fondo_general.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    /*C:\Programar\htdocs\ProyCasaMiau\CasaMiau\public\img\fondo_general.jpg*/
+    /*./public/img/gato_png4.pn*/
+    /*C:\Programar\htdocs\ProyCasaMiau\CasaMiau\public\img\fondo_general.jpg*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .space-white{
+    padding: 20px;
+}
+main .mensajes{
+    min-height: 550px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .mensajes .part1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var();
+}
+main .mensajes .part1 .titulos h1,main .mensajes .part1 .titulos_v2 h1{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 5em;
+}
+main .mensajes .part1 .titulos_v2{
+    padding-right: 45px;
+    font-family: 'Bebas Neue', cursive;
+}
+main .mensajes .part1 .titulos_v2 h1{   
+    color: var(--color-letter);
+    text-align: right;
+}
+
+
+main .mensajes .part1 .titulos .l_amarillo,main .mensajes .part1 .titulos_v2 .l_amarillo{
+    color: var(--color--secondary-background);
+}
+
+main .mensajes .part1 .contenido_img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-secundary);
+
+}
+
+main .mensajes .part1 .contenido_img2{
+    display: block;
+    background-color:var(--color--secondary-background);
+    height: 375px;
+    width: 150px;
+    margin-right: 25px;
+}
+main .mensajes .part1 .contenido_img3{
+    display: block;
+    background-color:var(--color-letter);
+    height: 375px;
+    width: 150px;
+    margin-right: 25px;
+}
+main .separador{
+    height: 10px;
+	border: 0;
+	box-shadow: 0 10px 10px -10px #727070 inset;
+    width: 100%;
+    margin-bottom: 80px;
+
+}
+main .mensajes_quienes{
+    margin-top: 40px;
+    margin-bottom: 80px;
+    width: 100%;
+    min-height: 200px;
+    background-color: var(--color-letter);
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+main .mensajes_quienes h1{
+    width: 30%;
+    font-family: var(--font-family-titulos);
+    font-weight: bold;
+    font-size: 80px;
+    text-align: center;
+}
+main .mensajes_quienes .imagen_new{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+main .mensajes_quienes .imagen_new .mensajes_new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    
+}
+main .mensajes_quienes .imagen_new .mensajes_new h3{
+    font-family: var(--font-family-logo);
+    font-weight: bold;
+    font-size: 17px;
+}
+main .alcanze{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+main .alcanze .corazones{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+main .alcanze .titulo_final{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 40px;
+}
+main .alcanze .titulo_final h2,main .alcanze .titulo_final h1{
+    text-align: center;
+}
+
+@media (max-width:1310px){
+    main .mensajes_quienes,main .mensajes_quienes .imagen_new{
+        flex-direction: column;
+    }
+    main .mensajes_quienes .imagen_new img{
+        height: auto;
+        width: 100%;
+    }
+}
+
+@media (max-width:780px){
+    main .alcanze .corazones{
+        flex-direction: column;
+    }
+}
+@media (max-width:900px){
+    main .mensajes_quienes h1{
+        width: 30%;
+        font-family: var(--font-family-titulos);
+        font-weight: bold;
+        font-size: 60px;
+        text-align: center;
+    }
+    main .mensajes .part1 .contenido_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--color-secundary);
+        width: auto;
+    }
+    
+    main .mensajes .part1 .contenido_img2{
+        display: block;
+        background-color:var(--color--secondary-background);
+        height: 375px;
+        width: auto;
+        margin-right: 25px;
+    }
+    main .mensajes .part1 .contenido_img3{
+        width: auto;
+        gap: 5px;
+    }
+    main .mensajes .part1 .titulos_v2 h1,main .mensajes .part1 .titulos h1{
+        font-size: 60px;
+        margin-left: 20px;
+    }
+    main .mensajes .part1 .contenido_img img{
+        max-width: 300px;
+        width: auto;
+    }
+}

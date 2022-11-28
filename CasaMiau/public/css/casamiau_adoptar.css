@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+:root{
+    --color-main:rgb(255, 255, 255);
+    --color-secundary:#d3cfcf;
+    --color-letter:#0600FF;
+    --letter-size:1em;
+    --font-family-logo: 'Nanum Gothic', sans-serif;
+    --color--secondary-background:#FFD814;
+    --font-family-titulos: 'Bebas Neue', cursive;
+
+}
+
+main .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    gap: 30px;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+main .container .contactos_new{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 20px;
+}
+main .container .contactos_new .componente{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    flex-direction: column;
+    gap: 20px;
+
+}
+main .container .contactos_new .componente .enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 25px;
+    padding: 20px;
+}
+main .container .adoptame{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 90%;
+    max-width: 750px;
+    transition: 0.3s ease;
+}
+main .container .adoptame .componente{
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color:#d3cfcf;
+    transition: 0.3s ease;
+}
+
+main .container .adoptame .componente h2{
+    color:rgb(240, 120, 120);
+    font-weight: bold;
+
+}
+main .container .adoptame .componente .enlace{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    gap: 15px;
+}
+main .container .adoptame .componente h3{
+    color: rgb(61, 59, 59);
+}
+main .c-1{
+    background-color: rgb(115, 226, 163);
+}
+main .c-2{
+    background-color: rgb(81, 179, 239);
+}
+main .c-3{
+    background-color: rgb(236, 136, 123);
+}
+main .container .adoptame .componente .active{
+    display: none;
+}
+main .container .adoptame .componente .letra_active{
+    font-size: 14px;
+    color: #000;
+}
+main .container .adoptame .componente .button{
+    color: rgb(75, 5, 5);
+    font-size: 15px;
+    border: 0;
+    width: 90px;
+    height: 30px;
+    border-radius: 5%;
+    transition: 0.6 ease;
+}
+main .container .adoptame .componente .button:hover{
+    transition: 0.6 ease;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.container .adoptame .email{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.container .adoptame .email form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+.container .adoptame .email form input{
+    margin: 3px;
+    width: 230px;
+    height: 40px;
+    font-size: 13px;
+    padding: 10px;
+}
+.container .adoptame .email form input textarea{
+    margin-left:6px ;
+}
+.container .adoptame .email form .texto_grande{
+    height: 80px;
+}
+.container .adoptame .email form .button{
+    border: 0;
+    background: var(--color-letter);
+    color: white;
+    transition: 0.6 ease;
+    border-radius: 5%;
+}
+.container .adoptame .email form .button:hover{
+    transform: scale(1.03);
+}
